@@ -1,0 +1,21 @@
+.comment-clint{
+    padding-bottom: 120px !important;
+    padding-top: 50px;
+}
+.testimonial{
+     background: linear-gradient(
+  45deg,
+  rgba(0,128,128,0.1),
+  rgba(0,128,128,0.05)
+) !important;
+
+     
+}
+.testimonial .testi-title {
+    color: var(--gray-color) !important;
+    font-size: 18px !important;
+}
+.testimonial .testi-feed{
+    color: #333 !important;
+    font-size: 20px !important;
+}

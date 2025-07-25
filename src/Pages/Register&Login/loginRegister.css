@@ -1,0 +1,29 @@
+.typography {
+  color: var(--gray-color) !important;
+  text-align: center !important;
+  margin-bottom: 42px !important;
+}
+.typography-2 {
+  text-align: center !important;
+  margin-top: 16px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center !important;
+}
+.btn-submit {
+  margin-top: 16px !important;
+  background-color: var(--primary-color) !important;
+  transition: 0.4s !important;
+}
+.btn-submit:hover {
+  background-color: var(--secondary-color) !important;
+}
+.account  {
+  color: var(--gray-color) !important;
+  margin-right: 7px !important;
+  font-size: 13px !important;
+}
+
+.MuiInputLabel-root {
+  text-shadow: none !important;
+}

@@ -1,0 +1,143 @@
+.special-page-list {
+  display: flex;
+  padding-block: 120px;
+  justify-content: space-between;
+}
+.special-sort {
+  width: 25%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  height: 270px;
+  padding: 20px;
+  display: grid;
+  gap: 7px;
+}
+
+.special-sort .form-groub label {
+  font-size: 16px;
+}
+
+.special-list {
+  width: 70%;
+}
+.special-list-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+.card-list-special {
+  display: grid;
+  position: relative;
+  height: 490px;
+  opacity: 0;
+  transform: translateY(-40px) scale(0.7);
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.special-list-image {
+  width: 100%;
+}
+.special-list-title {
+  font-size: 16px;
+  color: var(--gray-color);
+}
+.special-list-price {
+  color: var(--gray-color);
+}
+.special-list-price b {
+  color: #000;
+}
+.discount-special {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 20px;
+  color: var(--main-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.btn-see-more-special {
+  margin-inline: auto;
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* Media */
+@media (max-width: 1200px) {
+  .special-page-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .special-sort .form-groub label {
+    font-size: 18px;
+  }
+
+  .special-list-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-list-special {
+    height: 650px;
+  }
+
+  .special-list-title {
+    font-size: 18px;
+  }
+  .special-sort {
+    width: 75%;
+    margin-inline: auto;
+  }
+  .special-list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .special-page-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .special-list-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-list-special {
+    height: 520px;
+  }
+  .special-sort{
+    width: 100%;
+  }
+}
+
+@media (max-width: 585px) {
+  .special-list-item {
+    grid-template-columns: 1fr;
+  }
+  .card-list-special {
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+  .special-list-title {
+    margin-block: 10px;
+    font-size: 20px;
+  }
+  .special-list-price {
+    margin-block: 7px;
+  }
+}

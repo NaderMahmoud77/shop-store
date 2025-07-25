@@ -1,0 +1,89 @@
+.special-offer-page {
+  display: flex;
+  padding-block: 120px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.specail-images {
+  background-color: #fff;
+  width: 40%;
+  padding: 20px;
+}
+
+.select-img {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+}
+
+.colection-images {
+  display: flex;
+  justify-content: space-between;
+}
+.colection-images img {
+  width: 24%;
+  cursor: pointer;
+}
+.content-offer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+}
+.content-offer .title-offer {
+  color: var(--primary-color);
+}
+.content-offer .calc {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.calc .price {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.amount {
+  font-size: 20px;
+  font-weight: bold;
+}
+.content-offer .add-num {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.content-offer .number-add {
+  caret-color: var(--secondary-color);
+  border: none;
+  width: 110px;
+  height: 40px;
+  padding: 5px;
+}
+
+/* Descreption */
+.title-descreption {
+  margin-bottom: 10px;
+}
+.discreption-special {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .special-offer-page {
+    display: flex;
+    flex-direction: column;
+    padding-block: 50px;
+    gap: 30px;
+  }
+
+  .specail-images,
+  .content-offer {
+    width: 90%;
+  }
+}
