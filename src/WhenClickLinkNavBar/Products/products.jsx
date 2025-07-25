@@ -36,7 +36,7 @@ export let Products = () => {
   useEffect(() => {
     dispatch(fetchProducts());
     window.scrollTo(0, 0);
-  }, []);
+  }, [dispatch]);
 
   // Pagenation
   let POTDCUT_PAGE = 6;
