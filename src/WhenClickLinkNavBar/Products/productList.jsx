@@ -25,7 +25,7 @@ export function ProductsList({ products }) {
 
                 <div className="list-item-price">السعر :{i.price}$</div>
 
-                  <Link to={`/single-prouduct/${i.id}`}>
+                  <Link to={`/single-prouduct/${i.id}`} style={{width:"max-content",margin:"4px auto" , display:"block"}}>
                    <ButtonSeeMore />
                   </Link>
                   
