@@ -76,10 +76,10 @@ export const SpecialOffers = [
   {
     id: 105,
     title: "خليك متجدد مع أحدث موضة التيشرتات",
-    firstImage: "/images/special/s3.jpg",
+    firstImage: "/images/special/s4.jpg",
 
     images: [
-      "/images/special/s3.jpg",
+      "/images/special/s4.jpg",
       "/images/special/s1.jpg",
       "/images/special/s5.jpg",
       "/images/special/s8.jpg",

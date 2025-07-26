@@ -27,7 +27,7 @@ export default function RegisterPage() {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      minHeight="100vh"
+      minHeight="calc(100vh - 80px)"
       bgcolor="#f5f5f5"
     >
       <Paper elevation={4} sx={{ p: 4, maxWidth: 400, width: "100%" }}>

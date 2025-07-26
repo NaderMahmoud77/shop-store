@@ -1,16 +1,13 @@
 import { ProductsList } from "./productList";
 import { ProductsSideBar } from "./productsSideBar";
-import { fetchProducts } from "../../redux/apiCall/productCall";
-import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-
+import { products } from "../../Data/products";
 import "./products.css";
 import { Pagination } from "./Pagination";
 
 export let Products = () => {
-  let dispatch = useDispatch();
 
-  let { products } = useSelector((state) => state.products);
+  
 
   let [filterItem, setFilterItem] = useState("all");
   let [sortItem, setSortItem] = useState("select");
@@ -34,9 +31,9 @@ export let Products = () => {
       : filterProduct.sort((a, b) => (a.title - b.title ? 1 : -1));
 
   useEffect(() => {
-    dispatch(fetchProducts());
+    ;
     window.scrollTo(0, 0);
-  }, [dispatch]);
+  }, []);
 
   // Pagenation
   let POTDCUT_PAGE = 6;

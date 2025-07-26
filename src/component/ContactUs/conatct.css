@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 .title-contact-us{
   margin-top: 80px;

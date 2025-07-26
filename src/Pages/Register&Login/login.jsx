@@ -14,10 +14,10 @@ export default function LoginPage() {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      minHeight="100vh"
+      minHeight="calc(100vh - 83px)"
       bgcolor="#f5f5f5"
     >
-      <Paper elevation={4} sx={{ p: 4, maxWidth: 400, width: "100%" }}>
+      <Paper elevation={4} sx={{ p: 3, maxWidth: 400, width: "100%" }}>
         <Typography
           variant="h5"
          className="typography"

@@ -35,7 +35,7 @@ const SliderCard = ({ data }) => {
         <Typography gutterBottom variant="h5">
           {data.title}
         </Typography>
-        <Ratings value={5} />
+        <p className="rating-slider">{data.rating}</p>
         <div className="btn-price">
           <Link to={`/single-prouduct/${data.id}`}>
             <ButtonSeeMore />

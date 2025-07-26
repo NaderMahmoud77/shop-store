@@ -2,7 +2,7 @@
 import { useParams } from "react-router-dom";
 
 import { useEffect, useState } from "react";
-
+import { products } from "../../Data/products.js";
 // Style Css
 import "./single-product.css";
 
@@ -13,32 +13,30 @@ import Button from "@mui/material/Button";
 import { DiscreptionSingle } from "./Descrption-single.jsx";
 
 // Redux
-import { useDispatch, useSelector } from "react-redux";
-import { getProductById } from "../../redux/apiCall/productCall.js";
+import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../redux/apiCall/cartApiCall.js";
 import { openClose } from "../../redux/slices/openSnakeSlice.js";
 
-// Spinner
-import { Spinner } from "../../component/spinnerLoading/spinner.jsx";
 
 //////////////
 export let SingleProduct = () => {
   let [qyt, setQyt] = useState(1);
 
   let dispatch = useDispatch();
-  let { product, loading } = useSelector((stata) => stata.products);
 
   let { id } = useParams();
 
+  // Get Single Product
+  let product = products.find((e) => e.id === +id)
+  
+
   useEffect(() => {
-    dispatch(getProductById(id));
     window.scrollTo(0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
+  }, []);
 
 
-  // Show Loading ICon
-  if (loading) return <Spinner />;
+  
 
   // Event Handler
   function clickBtnAddItemToCart() {

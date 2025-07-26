@@ -26,7 +26,7 @@ export function SpecilList({ SpecialSort }) {
               </h4>
               <div className="discount-special">خصم {spe.discount}% 🔥</div>
               <Link
-                to={`/spical-offer/${spe.id}`}
+                to={`/special-offer/${spe.id}`}
                 className="btn-see-more-special"
               >
                 <ButtonSeeMore />
